@@ -36,6 +36,7 @@ else:
 
 current_users = ['anna', 'eugene', 'suzie', 'marta', 'alex']
 new_users = ['irina', 'eugene', 'anna', 'mary', 'john']
+upper_current_users = [i.upper() for i in current_users]
 for new_user in new_users:
     if new_user in current_users:
         print(f'{new_user.title()}, смените имя, такое имя уже существует!')
