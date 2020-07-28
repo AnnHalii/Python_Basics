@@ -76,15 +76,8 @@ favorite_number = {
     'john': 5,
     'mari': 2
     }
-anna = favorite_number['anna']
-dima = favorite_number['dima']
-vitalii = favorite_number['vitalii']
-john = favorite_number['john']
-mari = favorite_number['mari']
+for name, number in favorite_number.items():
+    print(f"{name.title()}'s favorite number is {number}.")
 
-print(f"Anna's favorite number is {anna}.")
-print(f"Dima's favorite number is {dima}.")
-print(f"Vitalii's favorite number is {vitalii}.")
-print(f"John's favorite number is {john}.")
-print(f"Mari's favorite number is {mari}.")
+
 
