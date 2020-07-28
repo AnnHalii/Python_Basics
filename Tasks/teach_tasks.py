@@ -1,16 +1,17 @@
 age = 53
 if age <= 2:
-   print('младенец')
+    print('младенец')
 elif 2 < age <= 4:
     print('малыш')
 elif 4 < age <= 13:
-   print('ребенок')
+    print('ребенок')
 elif 13 < age <= 20:
     print('подросток')
 elif 20 < age <= 65:
-   print('взрослый')
+    print('взрослый')
 else:
-   print('пожилой человек')
+    print('пожилой человек')
+
 
 fruits = ['banana']
 if fruits:
@@ -54,3 +55,36 @@ for number in numbers:
         print('3rd')
     else:
         print(f'{number}th')
+
+
+human = {
+    'first_name': 'Ann',
+    'last_name': 'Halii',
+    'age': 19,
+    'city': 'Severodonetsk'
+    }
+print(human['first_name'])
+print(human['last_name'])
+print(human['age'])
+print(human['city'])
+
+
+favorite_number = {
+    'anna': 7,
+    'dima': 3,
+    'vitalii': 12,
+    'john': 5,
+    'mari': 2
+    }
+anna = favorite_number['anna']
+dima = favorite_number['dima']
+vitalii = favorite_number['vitalii']
+john = favorite_number['john']
+mari = favorite_number['mari']
+
+print(f"Anna's favorite number is {anna}.")
+print(f"Dima's favorite number is {dima}.")
+print(f"Vitalii's favorite number is {vitalii}.")
+print(f"John's favorite number is {john}.")
+print(f"Mari's favorite number is {mari}.")
+
