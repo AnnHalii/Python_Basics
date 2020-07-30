@@ -80,4 +80,32 @@ for name, number in favorite_number.items():
     print(f"{name.title()}'s favorite number is {number}.")
 
 
+rivers_in_countries = {
+    'nile': 'egypt',
+    'amazon': 'brazil',
+    'yangtze': 'china',
+    'mississippi': 'usa'
+    }
+for river, country in rivers_in_countries.items():
+    print(f"\nThe {river.title()} runs through {country.title()}.")
+for river in rivers_in_countries.keys():
+    print(f"{river.title()}")
+for country in rivers_in_countries.values():
+    print(f"\t{country.title()}")
 
+
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+    'anna': 'python',
+    'anton': 0,
+    'ilya': 'java',
+    'eugene': 'java'
+    }
+for name, language in favorite_languages.items():
+    if language != 0:
+        print(f'{name.title()}, thank you for participating!')
+    else:
+        print(f'{name.title()}, take part in the survey!')
