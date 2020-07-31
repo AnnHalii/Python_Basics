@@ -5,14 +5,13 @@ def seasons():
     month = int(input('Введите месяц:'))
     if month in {1,2,12}:
         return 'Зима'
-    if month == 3 or month == 4 or month == 5:
+    if month in {3,4,5}:
         return 'Весна'
-    if month == 6 or month == 7 or month == 8:
+    if month in {6,7,8}:
         return 'Лето'
-    if month == 9 or month == 10 or month == 11:
+    if month in {9,10,11}:
         return 'Осень'
-    else:
-        return 'Неправильно введён месяц!'
+    return 'Неправильно введён месяц!'
 
 
 print(seasons())
