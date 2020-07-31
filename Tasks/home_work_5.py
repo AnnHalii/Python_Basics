@@ -1,8 +1,7 @@
 import math
 
 
-def seasons():
-    month = int(input('Введите месяц:'))
+def seasons(month):
     if month in {1,2,12}:
         return 'Зима'
     if month in {3,4,5}:
@@ -13,8 +12,8 @@ def seasons():
         return 'Осень'
     return 'Неправильно введён месяц!'
 
-
-print(seasons())
+month_num = int(input('Введите месяц:'))
+print(seasons(month_num))
 
 
 def converter(string, delimter):
