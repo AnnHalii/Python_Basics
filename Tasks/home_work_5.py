@@ -3,7 +3,7 @@ import math
 
 def seasons():
     month = int(input('Введите месяц:'))
-    if month == 12 or month == 1 or month == 2:
+    if month in {1,2,12}:
         return 'Зима'
     if month == 3 or month == 4 or month == 5:
         return 'Весна'
@@ -18,17 +18,18 @@ def seasons():
 print(seasons())
 
 
-def converter():
-    string = input('Введите свои слова:')
-    string = string.split()
+def converter(string, delimter):
+    string = string.split(delimter)
     counter = {}
     for word in string:
-        counter[word] = counter.get(word, 0)+1
-    doubles = {element: count for element, count in counter.items() if count >= 1}
-    return doubles
+        counter[word] = string.count(word)
+    return counter
 
 
-print(converter())
+string = input('Введите свои слова:')
+delimter = input('Введите свои слова:')
+
+print(converter(string, delimter))
 
 
 def get_rectangle_data():
