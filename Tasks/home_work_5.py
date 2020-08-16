@@ -12,6 +12,7 @@ def seasons(month):
         return 'Осень'
     return 'Неправильно введён месяц!'
 
+
 month_num = int(input('Введите месяц:'))
 print(seasons(month_num))
 
@@ -26,6 +27,7 @@ def converter(string, delimter):
 
 string = input('Введите свои слова:')
 delimter = input('Введите свои слова:')
+
 
 print(converter(string, delimter))
 
