@@ -1,0 +1,19 @@
+import requests
+
+URL = 'https://auto.ria.com/newauto/marka-hyundai/'
+
+
+def get_page_source_code(url):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return 'Error'
+    return r.text
+
+
+def collect_page_source_code():
+    html = get_page_source_code(URL)
+    with open('test.html', 'w', encoding='utf-8') as html_file:
+        html_file.write(html)
+
+
+collect_page_source_code()

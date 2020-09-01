@@ -40,6 +40,5 @@ def start_game():
             if select == 'You win!':
                 break
 
-
 start_game()
 

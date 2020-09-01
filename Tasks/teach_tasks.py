@@ -139,22 +139,31 @@
 #         print(place)
 
 
-cities = {
-    'NY': {
-        'country': 'usa',
-        'population': '5 million',
-        'fact': 'coolest city ever'
-    },
-    'LA': {
-        'country': 'usa',
-        'population': '3 million',
-        'fact': 'there Hollywood'
-    }
-}
-for city_name, city_info in cities.items():
-    print(city_name)
-    print(f"Country: {city_info['country'].title()}")
-    print(f"Population: {city_info['population']}")
-    print(f"Fact: {city_info['fact'].title()}")
+# cities = {
+#     'NY': {
+#         'country': 'usa',
+#         'population': '5 million',
+#         'fact': 'coolest city ever'
+#     },
+#     'LA': {
+#         'country': 'usa',
+#         'population': '3 million',
+#         'fact': 'there Hollywood'
+#     }
+# }
+# for city_name, city_info in cities.items():
+#     print(city_name)
+#     print(f"Country: {city_info['country'].title()}")
+#     print(f"Population: {city_info['population']}")
+#     print(f"Fact: {city_info['fact'].title()}")
 
+message = 'Choose pizza topping'
+message += "\nFor exit choose 'quite'"
 
+active = True
+while active is True:
+    choose = input(message)
+    if choose == 'quite':
+        active = False
+    else:
+        print(choose)
