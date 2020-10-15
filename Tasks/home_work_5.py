@@ -80,7 +80,7 @@
 #     sandwich_orders.remove('pastrami')
 # print(sandwich_orders)
 #
-responses = {}
+# responses = {}
 # start = True
 # while start:
 #     name = input('Please enter your name to participate in the survey:')
@@ -135,34 +135,161 @@ responses = {}
 #
 # people = get_formatted_name('ann',  'halii')
 # print(people)
+#
+#
+# class Restaurant:
+#     def __init__(self, restaurant_name, cuisine_type):
+#         self.restaurant_name = restaurant_name
+#         self.cuisine_type = cuisine_type
+#
+#     def describe_restaurant(self):
+#         print(f'The restaurant is called {self.restaurant_name}, here is {self.cuisine_type} cuisine.')
+#
+#     def open_restaurant(self):
+#         print(f'{self.restaurant_name} is opened!')
+#
+#
+# restaurant = Restaurant('Manhattan', 'european')
+# restaurant.describe_restaurant()
+#
+# restaurant_2 = Restaurant('Churasko', 'mexican')
+# restaurant_2.describe_restaurant()
+#
+# restaurant_3 = Restaurant('Forest', 'georgian')
+# restaurant_3.describe_restaurant()
+#
+#
+# class User:
+#     def __init__(self, first_name, last_name, age, male):
+#         self.first_name = first_name
+#         self.last_name = last_name
+#         self.age = age
+#         self.male = male
+#
+#     def describe_user(self):
+#         full_name = f'{self.first_name} {self.last_name}'
+#         print(full_name.title())
+#
+#     def greet_user(self):
+#         if self.male == 'male':
+#             print('piska')
+#         elif self.male == 'female':
+#             print('Hi, bitch')
+#         else:
+#             print('Choose correct')
+#
+#
+# user1 = User('ann', 'halii', 19, 'female')
+# user1.describe_user()
+# user1.greet_user()
 
 
-class Restaurant():
-    def __init__(self, restaurant_name, cuisine_type):
-        self.restaurant_name = restaurant_name
-        self.cuisine_type = cuisine_type
-
-    def describe_restaurant(self):
-        print(f'The restaurant is called {self.restaurant_name}, here is {self.cuisine_type} cuisine.')
-
-    def open_restaurant(self):
-        print(f'{self.restaurant_name} is opened!')
-
-
-restaurant = Restaurant('Manhattan', 'european')
-restaurant.describe_restaurant()
-
-restaurant_2 = Restaurant('Churasko', 'mexican')
-restaurant_2.describe_restaurant()
-
-restaurant_3 = Restaurant('Forest', 'georgian')
-restaurant_3.describe_restaurant()
 
 
 
+# games = ['tennis', 'computer']
+# foods = ['pivo', 'fish', 'hinkali']
+# favorites = games + foods
+# print(favorites)
+#
+# builds = 3
+# ninja = 25
+# tunel = 2
+# samurai = 40
+# all = builds*ninja+tunel*samurai
+# print(all)
+#
+# f_name = 'Ann'
+# l_name = 'Halii'
+# print("Hello, %s" % f_name, "%s" % l_name)
 
 
+# import turtle as t
+# square
+# t = turtle.Pen()
+#
+# t.forward(70)
+# t.up()
+# t.forward(30)
+# t.down()
+# t.left(90)
+# t.forward(70)
+# t.up()
+# t.forward(30)
+# t.down()
+# t.left(90)
+# t.forward(70)
+# t.up()
+# t.forward(30)
+# t.down()
+# t.left(90)
+# t.forward(70)
+# t.up()
+# t.forward(30)
+# t.down()
+# t.left(90)
 
+# triangle
+# t = turtle.Pen()
+#
+# t.forward(100)
+# t.left(120)
+# t.forward(100)
+# t.left(120)
+# t.forward(100)
 
+# rectangle
+
+# t = turtle.Pen()
+# t.forward(200)
+# t.left(90)
+# t.forward(70)
+# t.left(90)
+# t.forward(200)
+# t.left(90)
+# t.forward(70)
+
+# money = 2000
+# if money > 1000:
+#     print('Я багатий!')
+# else:
+#     print("Я не багатий!")
+#     print("Може, коли-небудь потім …")
+#
+#
+# twinkies = 200
+# if 100 <= twinkies <= 500:
+#     print('Занадто мало або занадто багато')
+# else:
+#     print('Не відповідає')
+#
+#
+# money = 400
+# if 100 <= money <= 500:
+#     print('Відповідає')
+# elif 1000 <= money <= 5000:
+#     print('Відповідає')
+# else:
+#     print('Не відповідає')
+#
+#
+# ninjas = 60
+# if ninjas <= 10:
+#     print('Я переможу цих ніндзя!')
+# elif ninjas <= 30:
+#     print('Буде непросто, але я з ними розправлюсь')
+# elif 31 <= ninjas <= 50:
+#     print('Їх дуже багато')
+# else:
+#     print('Їх занадто багато')
+#
+#
+# for i in range(1, 20, 2):
+#     print(i)
+#
+#
+# ingredients = ['snails', 'leeches', 'gorilla belly-button lint', 'caterpillar eyebrows', 'centipede toes']
+# for i, ingredient in enumerate(ingredients):
+#     print(f'{i+1}. {ingredient.title()}')
 
 
