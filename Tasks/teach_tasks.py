@@ -156,14 +156,14 @@
 #     print(f"Country: {city_info['country'].title()}")
 #     print(f"Population: {city_info['population']}")
 #     print(f"Fact: {city_info['fact'].title()}")
-
-message = 'Choose pizza topping'
-message += "\nFor exit choose 'quite'"
-
-active = True
-while active is True:
-    choose = input(message)
-    if choose == 'quite':
-        active = False
-    else:
-        print(choose)
+#
+# message = 'Choose pizza topping'
+# message += "\nFor exit choose 'quite'"
+#
+# active = True
+# while active is True:
+#     choose = input(message)
+#     if choose == 'quite':
+#         active = False
+#     else:
+#         print(choose)
