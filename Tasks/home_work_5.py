@@ -316,8 +316,7 @@ class Die:
 
 
 game = Die()
-game2 = Die(10)
-game3 = Die(20)
+
 
 for i in range(0,10):
     game3.roll_die()
