@@ -169,39 +169,157 @@
 #
 # restaurant_3 = Restaurant('Forest', 'georgian')
 # restaurant_3.describe_restaurant()
+#
+#
+# class IceCreamStand(Restaurant):
+#
+#     def __init__(self, restaurant_name, cuisine_type):
+#         super().__init__(restaurant_name, cuisine_type)
+#         self.flavors = ['sweet', 'caramel', 'salt', 'raspberry']
+#
+#     def show_flavor(self):
+#         print('Our flavours is: ')
+#         for flavor in self.flavors:
+#             print(flavor)
 
 
-class User:
-    def __init__(self, first_name, last_name, age, male):
-        self.first_name = first_name
-        self.last_name = last_name
-        self.age = age
-        self.male = male
-        self.login_attempts = 0
+# icecream = IceCreamStand('Forest', 'georgian')
+# print(icecream.show_flavor())
 
-    def describe_user(self):
-        full_name = f'{self.first_name} {self.last_name}'
-        print(full_name.title())
+# class User:
+#     def __init__(self, first_name, last_name, age, male):
+#         self.first_name = first_name
+#         self.last_name = last_name
+#         self.age = age
+#         self.male = male
+#         self.login_attempts = 0
+#
+#     def describe_user(self):
+#         full_name = f'{self.first_name} {self.last_name}'
+#         print(full_name.title())
+#
+#     def increment_login_attempts(self, count):
+#         self.login_attempts += count
+#
+#     def reset_login_attempts(self):
+#         self.login_attempts = 0
+#
+#     def greet_user(self):
+#         if self.male == 'male':
+#             print('pipiska')
+#         elif self.male == 'female':
+#             print('hi, bitch')
+#         else:
+#             print('Choose correct')
+#
+#
+# user1 = User('ann', 'halii', 19, 'female')
+# user1.increment_login_attempts(1)
+# user1.increment_login_attempts(1)
+# user1.increment_login_attempts(1)
+# print(user1.login_attempts)
+# user1.reset_login_attempts()
+# print(user1.login_attempts)
+#
+#
+# class Privileges:
+#     def __init__(self):
+#         self.privileges = ["разрешено добавлять сообщения", "разрешено удалять пользователей", "разрешено банить пользователей"]
+#
+#     def show_privileges(self):
+#         print('Администратору разрешено:')
+#         for i in self.privileges:
+#             print(i)
+#
+#
+# class Admin(User):
+#     def __init__(self, first_name, last_name, age, male):
+#         super().__init__(first_name, last_name, age, male)
+#         self.privileges = Privileges()
+#
+#
+# user2 = Admin('ann', 'halii', 19, 'female')
+# print(user2.privileges.show_privileges())
 
-    def increment_login_attempts(self, count):
-        self.login_attempts += count
 
-    def reset_login_attempts(self):
-        self.login_attempts = 0
+# class Car():
+#     def __init__(self, make, model, year):
+#         self.make = make
+#         self.model = model
+#         self.year = year
+#         self.odometer_reading = 0
+#
+#     def get_descriptive_name(self):
+#         long_name = f"{self.year} {self.make} {self.model}"
+#         return long_name.title()
+#
+#     def read_odometer(self):
+#         print(f"This car has {self.odometer_reading} miles on it.")
+#
+#     def update_odometer(self, mileage):
+#         if mileage >= self.odometer_reading:
+#             self.odometer_reading = mileage
+#         else:
+#             print("You can't roll back an odometer!")
+#
+#     def increment_odometer(self, miles):
+#         self.odometer_reading += miles
+#
+#
+# class Battery():
+#     def __init__(self, battery_size=75):
+#         self.battery_size = battery_size
+#
+#     def describe_battery(self):
+#         print(f"This car has a {self.battery_size}-kWh battery.")
+#
+#     def get_range(self):
+#         if self.battery_size == 75:
+#             range = 260
+#         elif self.battery_size == 100:
+#             range = 315
+#
+#         print(f"This car can go about {range} miles on a full charge.")
+#
+#     def upgrade_battery(self, battery_size2):
+#         if battery_size2 >= self.battery_size:
+#             self.battery_size = battery_size2
+#
+#
+#
+# class ElectricCar(Car):
+#
+#     def __init__(self, make, model, year):
+#         super().__init__(make, model, year)
+#         self.battery = Battery()
+#
+#     def fill_gas_tank(self):
+#         print("This car doesn't need a gas tank!")
+#
+#
+# my_tesla = ElectricCar('tesla', 'model s', 2019)
+# print(my_tesla.get_descriptive_name())
+# my_tesla.battery.get_range()
+# my_tesla.battery.upgrade_battery(100)
+# my_tesla.battery.get_range()
 
-    def greet_user(self):
-        if self.male == 'male':
-            print('pipiska')
-        elif self.male == 'female':
-            print('hi, bitch')
-        else:
-            print('Choose correct')
 
 
-user1 = User('ann', 'halii', 19, 'female')
-user1.increment_login_attempts(1)
-user1.increment_login_attempts(1)
-user1.increment_login_attempts(1)
-print(user1.login_attempts)
-user1.reset_login_attempts()
-print(user1.login_attempts)
+from random import randint, choice
+
+class Die:
+    def __init__(self, sides=6):
+        self.sides = sides
+
+    def roll_die(self):
+        print(randint(0, self.sides))
+
+
+game = Die()
+game2 = Die(10)
+game3 = Die(20)
+
+for i in range(0,10):
+    game3.roll_die()
+
+
